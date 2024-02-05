@@ -1,117 +1,328 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="仿米游社首页静态页面案例">
+  <meta name="keywords" content="米游社,静态页面,案例,float布局">
+  <title>原神社区-米游社</title>
+  <link rel="shortcut icon" href="http://www.ylcp.shop/files/files/1653039741554/favicon.ico">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="http://www.ylcp.shop/files/files/1653039741554/css/index.css">
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
 <body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+  <!-- header部分开始 -->
+  <header style="z-index: 100;">
+    <div class="mid">
+      <div class="logo">
+        <img src="picture/logo.png" alt="mihoyo">
+        <strong>米游社·原神</strong>
+      </div>
+      <ul class="list">
+        <li>首页</li>
+        <li>酒馆</li>
+        <li>攻略</li>
+        <li>官方</li>
+        <li>观测枢</li>
+        <li>米游铺</li>
+        <li>更多</li>
+      </ul>
+      <div class="user">
+        <form action="javascript:;" method="post">
+          <input type="text">
+        </form>
+        <div class="focus">关注</div>
+        <div class="message">消息</div>
+        <div class="userInfo">
+          <a href="#">
+            <img src="picture/profile.png" alt="我的头像">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header部分结束 -->
 
-  ga('create', 'UA-60404362-1', 'auto');
-  ga('send', 'pageview');
+  <!-- content部分开始 -->
+  <div class="content clearfix">
+    <!-- article部分开始 -->
+    <article>
+      <div class="picscroll">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="picture/banner01.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="picture/banner02.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="picture/banner03.png" alt=""></div>
+            <div class="swiper-slide"><img src="picture/banner04.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="picture/banner05.jpeg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <ul class="articlelist">
+        <li>
+          <div class="article-item-header">
+            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
+            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
+            <span>11-13·官方</span>
+          </div>
+          <div class="article-item-body">
+            <a href="#">
+              <div class="article-item-body-title clearfix">
+                <h3>官方</h3>
+                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
+              </div>
+              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
+              </p>
+              <div class="article-item-body-pic"></div>
+            </a>
+          </div>
+          <div class="article-item-footer">
+            <div class="article-item-footer-label">
+              <a href="#"><span>皑尘与雪影</span></a>
+            </div>
+            <p class="article-item-footer-details">
+              <span class="iconfont icon-browse"></span><span>17w+</span>
+              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
+              <span class="iconfont icon-good"></span><span>2w+</span>
+            </p>
+          </div>
+        </li>
+        <li class="secondlist">
+          <div class="article-item-header">
+            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
+            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
+            <span>11-13·官方</span>
+          </div>
+          <div class="article-item-body">
+            <a href="#">
+              <div class="article-item-body-title clearfix">
+                <h3>官方</h3>
+                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
+              </div>
+              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
+              </p>
+              <div class="article-item-body-pic">
+                <div class="article-item-body-pic-pause"></div>
+              </div>
+            </a>
+          </div>
+          <div class="article-item-footer">
+            <div class="article-item-footer-label">
+              <a href="#"><span>皑尘与雪影</span></a>
+            </div>
+            <p class="article-item-footer-details">
+              <span class="iconfont icon-browse"></span><span>17w+</span>
+              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
+              <span class="iconfont icon-good"></span><span>2w+</span>
+            </p>
+          </div>
+        </li>
+        <li class="thirdlist">
+          <div class="article-item-header">
+            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
+            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
+            <span>11-13·官方</span>
+          </div>
+          <div class="article-item-body">
+            <a href="#">
+              <div class="article-item-body-title clearfix">
+                <h3>官方</h3>
+                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
+              </div>
+              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
+              </p>
+              <div class="article-item-body-pic"></div>
+              <div class="article-item-body-pic"></div>
+              <div class="article-item-body-pic"></div>
+            </a>
+          </div>
+          <div class="article-item-footer">
+            <div class="article-item-footer-label">
+              <a href="#"><span>皑尘与雪影</span></a>
+            </div>
+            <p class="article-item-footer-details">
+              <span class="iconfont icon-browse"></span><span>17w+</span>
+              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
+              <span class="iconfont icon-good"></span><span>2w+</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="article-item-header">
+            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
+            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
+            <span>11-13·官方</span>
+          </div>
+          <div class="article-item-body">
+            <a href="#">
+              <div class="article-item-body-title clearfix">
+                <h3>官方</h3>
+                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
+              </div>
+              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
+                  </p>
+                  <div class="article-item-body-pic"></div>
+            </a>
+          </div>
+          <div class="article-item-footer">
+            <div class="article-item-footer-label">
+              <a href="#"><span>皑尘与雪影</span></a>
+            </div>
+            <p class="article-item-footer-details">
+              <span class="iconfont icon-browse"></span><span>17w+</span>
+              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
+              <span class="iconfont icon-good"></span><span>2w+</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <!-- article部分结束 -->
+    <!-- aside部分开始 -->
+    <aside>
+      <div class="asidecommit">
+        <p>发布</p>
+        <div>
+          <a href="#" target="_blank"><button>发布帖子</button></a>
+          <p>讨论、分析、攻略、同人文</p>
+        </div>
+        <div>
+          <a href="#" target="_blank"><button>发布图片</button></a>
+          <p>绘画、COS、手工、表情包</p>
+        </div>
+      </div>
+      <div class="download">
+        <div class="download-img">
+          <img src="picture/qrcode_ys.png" alt="QRcode">
+        </div>
+        <div class="download-text">
+          <p>扫码下载米游社App</p>
+          <p>了解提瓦特最新资讯</p>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="picture/banner.jpg" alt="banner">
+      </div>
+      <div class="news">
+        <div class="news-header">
+          <strong>官方资讯</strong>
+          <a href="#"><span>更多</span></a>
+        </div>
+        <div class="news-body">
+          <div class="news-body-img">
+            <div class="news-body-img-info">【已开奖】香菱生日活动开启！</div>
+          </div>
+          <ul class="news-list">
+            <li><a href="#"><span>活动</span><span>米游币许愿池-原神版区十一月场开启！</span></a></li>
+            <li><a href="#"><span>资讯</span><span>2.3新版本「皑尘与雪影」先行展示页现已开启！</span></a></li>
+            <li><a href="#"><span>资讯</span><span>《原神》2.3版本「皑尘与雪影」前瞻特别节目回顾长图</span></a></li>
+            <li><a href="#"><span>公告</span><span>「地脉移涌」活动：「藏金之花」「启示之花」双倍掉落！</span></a></li>
+            <li><a href="#"><span>公告</span><span>「角色活动祈愿-2」（新增类型）机制说明</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- aside部分结束 -->
+  </div>
+  <!-- content部分结束 -->
 
-</script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2321502295700279&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1706892065&amp;plat=8%3A32768%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;plas=634x1029_l%7C634x1029_r&amp;format=0x0&amp;url=https%3A%2F%2Fwww.xsfungames.com%2F&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1~2~4~6&amp;aslcwct=150&amp;asacwct=25&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTIxLjAuNjE2Ny4xNDAiLG51bGwsMCxudWxsLCI2NCIsW1siTm90IEEoQnJhbmQiLCI5OS4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjEyMS4wLjYxNjcuMTQwIl0sWyJDaHJvbWl1bSIsIjEyMS4wLjYxNjcuMTQwIl1dLDBd&amp;dt=1707133559999&amp;bpp=325&amp;bdt=22&amp;idt=351&amp;shv=r20240131&amp;mjsv=m202401300101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=6350731296752&amp;frm=20&amp;pv=2&amp;ga_vid=1599850957.1707133560&amp;ga_sid=1707133560&amp;ga_hid=55895816&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=1440&amp;u_w=2560&amp;u_ah=1392&amp;u_aw=2560&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=2543&amp;bih=1305&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C42531706%2C42532523%2C31080836%2C95322181%2C95320868%2C95324155%2C95324161%2C31078663%2C31078665%2C31078668%2C31078670&amp;oid=2&amp;pvsid=2183119198698857&amp;tmod=924909395&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C2560%2C0%2C2560%2C1392%2C2560%2C1305&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1&amp;td=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=360" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
-<header><div class="container-fluid" style="background:none;">
-<div class="container" style="background:none;">
-<div class="row">
-	<div class="col-sm-8 col-xs-6 headerLogo" style="background:none;">
-			<a href="index.html"><img src="images/pm-header-logo.png" alt="Ironkill-logo" title="Ironkill-logo-header"></a>
-	</div>
-	<div class="col-sm-4 col-xs-6 headerLogo">
-		<div class="pull-right social-wrap">
-			<p class="pull-left">Best Casual Games!</p>
-			<ul class="social-icon list-unstyled pull-right">
-				<li class="facebook"><a href="" target="_blank"></a></li>
-				<li class="twitter"><a href="" target="_blank"></a></li>
-				<li class="googleplus"><a href="" rel="publisher" target="_blank"></a></li>
-			</ul>
-		</div>
-		</div>
-	</div>
-</div>
-</div>
-</header>
+  <!-- footer部分开始 -->
+  <footer>
+    <div class="main">
+      <div class="footer-nav">
+        <div class="footer-item" id="communityMap">
+          <p class="footer-item-title"><strong>社区地图</strong></p>
+          <div>
+            <p><a href="#">酒馆</a><a href="#">攻略</a></p>
+            <p><a href="#">官方</a><a href="#">观测枢</a></p>
+            <p><a href="#">米游铺</a></p>
+            <p><a href="#">同人图</a><a href="#">COS</a></p>
+            <p><a href="#">硬核</a></p>
+          </div>
+        </div>
+        <div class="footer-item" id="knowUs">
+          <p class="footer-item-title"><strong>了解我们</strong></p>
+          <div>
+            <p><a href="#">关于我们</a></p>
+            <p><a href="#">加入我们</a></p>
+            <p><a href="#">原神官网</a></p>
+            <p><a href="#">米哈游官网</a></p>
+          </div>
+        </div>
+        <div class="footer-item" id="relatedInfo">
+          <p class="footer-item-title"><strong>相关信息</strong></p>
+          <div>
+            <p><a href="#">隐私政策</a></p>
+            <p><a href="#">米哈游社区用户服务协议</a></p>
+            <p><a href="#">米哈游通行证用户服务协议</a></p>
+          </div>
+        </div>
+        <div class="footer-item" id="contactUs">
+          <p class="footer-item-title"><strong>联系我们</strong></p>
+          <div>
+            <p><a href="#">地址：上海市徐汇区宜山路700号C4栋6层</a></p>
+            <p><a href="#">电话：400-666-6312（每天10:00~20:00）</a></p>
+          </div>
+        </div>
+        <div class="footer-item" id="QRcode">
+          <a href="javascript:;" target="_self">
+            <div>
+              <img src="picture/qrcode_ys.png" alt="">
+            </div>
+            <p>扫码下载米游社App</p>
+            <p>了解提瓦特最新资讯</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2018 米哈游版权所有｜沪公网安备31010402001113号 | 沪ICP备19018275号-4</p>
+        <p>沪网文〔2021〕3168-216｜增值电信业务经营许可证：沪B2-20210555</p>
+        <p>互联网违法不良信息举报电话：021-60371750（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：tousu@mihoyo.com</p>
+        <p>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+        <ul class="footer-license">
+          <li><a href="#" target="_blank"><img src="picture/license01.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="picture/license02.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="picture/license03.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="picture/license04.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="picture/license05.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="picture/license06.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- footer部分结束 -->
 
+  <!-- js 引入swiper -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- js swiper初始化 -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: -245,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // autoplay :true,
+    });
+  </script>
+</body>
+</html>
 
-<div class="banner">
-	<img class="bannerImg hidden-xs hidden-sm" src="images/lg-about-banner.jpg" alt="">
-	<img class="hidden-lg hidden-md hidden-lg hidden-xs" src="images/sm-about-banner.jpg" alt="">
-	<img class="hidden-lg hidden-md hidden-sm" src="images/xs-about-banner.jpg" alt="">
-<!--<h1 class="banner-text"><span>Making the best<span><br/><span class="upper"> gaming</span><br/><span class="orangebg">experiences possible</span></h1>
-<h1>Making <br/>the best gaming <br/>experiences possible</h1>-->
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="aboutWrap text-center" style="background:none;">
-				<h2 class="bgh2">About XSFun Games</h2>
-				<p>Our small team in China - plus our freelancers across the globe - know that it's simple things that make a difference. So that's what we focus on when we're making our games. Get the details right, and everything else falls into place! Also - Casual Games. </p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="banner">
-	<img class="bannerImg hidden-xs hidden-sm" src="images/lg-what-we-do-banner.jpg" alt="">
-	<img class="hidden-lg hidden-md hidden-lg hidden-xs" src="images/sm-what-we-do-banner.jpg" alt="">
-	<img class="hidden-lg hidden-md hidden-sm" style="position: relative;left: -25px;" src="images/xs-what-we-do-banner.jpg" alt="">
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="aboutWrap text-center" style="background:none;">
-				<h2 class="bgh2">What We Do</h2>
-				<p>Mobiles and tablets have opened up a totally new way of playing games, and at XSFun Games, we're taking full advantage of that. With awesome touch screen controls, top-notch graphics and a lot of imagination, we're making games like no other!</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid footer" style="background:none;">
-	<div class="container">
-	<div class="row" style="padding:20px 0;">
-		<div class="col-md-4 col-sm-4 col-xs-12"><a href="index.html"><img src="images/pm-footer-logo.png" alt="play-motion-logo" title="play-motion-logo"></a></div>
-		<div class="col-md-8 col-sm-8 col-xs-12 text-right">
-			<div class="footer-nav">
-			<a class="" href="">Press &amp; Media</a>
-            <a class="" href="mailto:xsfungames@gmail.com">Contact Us : xsfungames@gmail.com</a> 
-			<p>TEL: +86 181****4285</p>
-            <p> Room 303, No. 71 Sanqiao Village, Longqiao Town, Longhua District, Haikou City, Hainan Province</p>
-            <p> 海南省海口市龙华区龙桥镇三桥村71号303室</p>
-			<p class="copy">© XSFun Information Technology Co., Ltd. All Rights Reserved </p>
-			<p>© 海口龙华涔术优选百货店</p>
-			</div>
-		</div>
-		</div>
-	</div>
-	
-	
-</div>
-<div id="backtotop" class="hidden-xs hidden-sm"><div class="bttbg"></div></div>
-<div class="container-fluid footer-copy">
-	<div class="container">
-	<div class="row" style="padding:7px 0;">
-	<div class="col-lg-12">
-		<a class="pull-right" href="javascript:void(0);" target="_blank"><img src="images/webwingz-logo.png" alt="webwingz-logo" title="webwingz-logo"></a>
-		</div>
-	</div>
-	</div>
-</div>
-<script type="text/javascript">
-//Fix footer
-function resizeApplication(){
-   var winheight = $(window).height();
-   var appheight = $('.navbar').height()+$('#main').height()+$('.footer').height();
-   if(appheight<winheight){
-    var minheight = winheight - ($('.navbar').height()+$('footer').height()+269);
-    $('#main').css('min-height',minheight+'px');
-   }
-   return false;
-  }
-  $(document).ready(function() {
-   resizeApplication();
-   $(window).resize(function() {
-    resizeApplication();
-   });
-   
-});
-</script>
-
-
-<iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body>
