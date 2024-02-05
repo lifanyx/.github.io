@@ -1,328 +1,90 @@
+<html><head>
+  <meta charset="utf-8">
 
+  <title>Cocos Creator | secretfiles</title>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="仿米游社首页静态页面案例">
-  <meta name="keywords" content="米游社,静态页面,案例,float布局">
-  <title>原神社区-米游社</title>
-  <link rel="shortcut icon" href="http://www.ylcp.shop/files/files/1653039741554/favicon.ico">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/content.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="http://www.ylcp.shop/files/files/1653039741554/css/index.css">
-  <link rel="stylesheet" href="css/iconfont.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-</head>
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="360-fullscreen" content="true">
+  
+  <!-- force screen orientation on some browser -->
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style-mobile.25fc5.css">
+  <link rel="icon" href="favicon.8de18.ico">
+<script src="https://cdn.h5wan.4399sj.com/h5mini-2.0/dist/static/js/api.js"></script><style>.cocosVideo:-moz-full-screen{transform:matrix(1,0,0,1,0,0) !important;}.cocosVideo:full-screen{transform:matrix(1,0,0,1,0,0) !important;}.cocosVideo:-webkit-full-screen{transform:matrix(1,0,0,1,0,0) !important;}</style></head>
 <body>
-  <!-- header部分开始 -->
-  <header style="z-index: 100;">
-    <div class="mid">
-      <div class="logo">
-        <img src="picture/logo.png" alt="mihoyo">
-        <strong>米游社·原神</strong>
-      </div>
-      <ul class="list">
-        <li>首页</li>
-        <li>酒馆</li>
-        <li>攻略</li>
-        <li>官方</li>
-        <li>观测枢</li>
-        <li>米游铺</li>
-        <li>更多</li>
-      </ul>
-      <div class="user">
-        <form action="javascript:;" method="post">
-          <input type="text">
-        </form>
-        <div class="focus">关注</div>
-        <div class="message">消息</div>
-        <div class="userInfo">
-          <a href="#">
-            <img src="picture/profile.png" alt="我的头像">
-          </a>
-        </div>
-      </div>
+  <div id="Cocos2dGameContainer" style="transform: rotate(0deg); width: 631px; height: 1123px; margin: 0px; padding: 0px;"><canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99" class="gameCanvas" width="631" height="1123" style="width: 631px; height: 1123px;"></canvas></div>
+  <div id="splash" style="display: none;">
+    <div class="progress-bar stripes">
+      <span style="width: 100%;"></span>
     </div>
-  </header>
-  <!-- header部分结束 -->
-
-  <!-- content部分开始 -->
-  <div class="content clearfix">
-    <!-- article部分开始 -->
-    <article>
-      <div class="picscroll">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="picture/banner01.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="picture/banner02.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="picture/banner03.png" alt=""></div>
-            <div class="swiper-slide"><img src="picture/banner04.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="picture/banner05.jpeg" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-      <ul class="articlelist">
-        <li>
-          <div class="article-item-header">
-            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
-            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
-            <span>11-13·官方</span>
-          </div>
-          <div class="article-item-body">
-            <a href="#">
-              <div class="article-item-body-title clearfix">
-                <h3>官方</h3>
-                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
-              </div>
-              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
-              </p>
-              <div class="article-item-body-pic"></div>
-            </a>
-          </div>
-          <div class="article-item-footer">
-            <div class="article-item-footer-label">
-              <a href="#"><span>皑尘与雪影</span></a>
-            </div>
-            <p class="article-item-footer-details">
-              <span class="iconfont icon-browse"></span><span>17w+</span>
-              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
-              <span class="iconfont icon-good"></span><span>2w+</span>
-            </p>
-          </div>
-        </li>
-        <li class="secondlist">
-          <div class="article-item-header">
-            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
-            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
-            <span>11-13·官方</span>
-          </div>
-          <div class="article-item-body">
-            <a href="#">
-              <div class="article-item-body-title clearfix">
-                <h3>官方</h3>
-                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
-              </div>
-              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
-              </p>
-              <div class="article-item-body-pic">
-                <div class="article-item-body-pic-pause"></div>
-              </div>
-            </a>
-          </div>
-          <div class="article-item-footer">
-            <div class="article-item-footer-label">
-              <a href="#"><span>皑尘与雪影</span></a>
-            </div>
-            <p class="article-item-footer-details">
-              <span class="iconfont icon-browse"></span><span>17w+</span>
-              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
-              <span class="iconfont icon-good"></span><span>2w+</span>
-            </p>
-          </div>
-        </li>
-        <li class="thirdlist">
-          <div class="article-item-header">
-            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
-            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
-            <span>11-13·官方</span>
-          </div>
-          <div class="article-item-body">
-            <a href="#">
-              <div class="article-item-body-title clearfix">
-                <h3>官方</h3>
-                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
-              </div>
-              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
-              </p>
-              <div class="article-item-body-pic"></div>
-              <div class="article-item-body-pic"></div>
-              <div class="article-item-body-pic"></div>
-            </a>
-          </div>
-          <div class="article-item-footer">
-            <div class="article-item-footer-label">
-              <a href="#"><span>皑尘与雪影</span></a>
-            </div>
-            <p class="article-item-footer-details">
-              <span class="iconfont icon-browse"></span><span>17w+</span>
-              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
-              <span class="iconfont icon-good"></span><span>2w+</span>
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="article-item-header">
-            <a href="#"><img src="picture/usericon.png" alt="usericon"></a>
-            <a href="#"><span>西风快报员</span><img src="picture/level16.png" alt=""></a>
-            <span>11-13·官方</span>
-          </div>
-          <div class="article-item-body">
-            <a href="#">
-              <div class="article-item-body-title clearfix">
-                <h3>官方</h3>
-                <h3>2.3新版本「皑尘与雪影」先行展示页现已开启！</h3>
-              </div>
-              <p class="article-item-body-content">极冰之寒令人望而却步，生命的奥秘在其中慢慢滋长…追踪潜藏于雪幕之中的暗影，等待拂去灰烬，皑尘落定吧。>>点击前往2.3新版本「皑尘与雪影」先行展示页<<
-                  </p>
-                  <div class="article-item-body-pic"></div>
-            </a>
-          </div>
-          <div class="article-item-footer">
-            <div class="article-item-footer-label">
-              <a href="#"><span>皑尘与雪影</span></a>
-            </div>
-            <p class="article-item-footer-details">
-              <span class="iconfont icon-browse"></span><span>17w+</span>
-              <a href="#"><span class="iconfont icon-comment"></span></a><span>1250</span>
-              <span class="iconfont icon-good"></span><span>2w+</span>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </article>
-    <!-- article部分结束 -->
-    <!-- aside部分开始 -->
-    <aside>
-      <div class="asidecommit">
-        <p>发布</p>
-        <div>
-          <a href="#" target="_blank"><button>发布帖子</button></a>
-          <p>讨论、分析、攻略、同人文</p>
-        </div>
-        <div>
-          <a href="#" target="_blank"><button>发布图片</button></a>
-          <p>绘画、COS、手工、表情包</p>
-        </div>
-      </div>
-      <div class="download">
-        <div class="download-img">
-          <img src="picture/qrcode_ys.png" alt="QRcode">
-        </div>
-        <div class="download-text">
-          <p>扫码下载米游社App</p>
-          <p>了解提瓦特最新资讯</p>
-        </div>
-      </div>
-      <div class="banner">
-        <img src="picture/banner.jpg" alt="banner">
-      </div>
-      <div class="news">
-        <div class="news-header">
-          <strong>官方资讯</strong>
-          <a href="#"><span>更多</span></a>
-        </div>
-        <div class="news-body">
-          <div class="news-body-img">
-            <div class="news-body-img-info">【已开奖】香菱生日活动开启！</div>
-          </div>
-          <ul class="news-list">
-            <li><a href="#"><span>活动</span><span>米游币许愿池-原神版区十一月场开启！</span></a></li>
-            <li><a href="#"><span>资讯</span><span>2.3新版本「皑尘与雪影」先行展示页现已开启！</span></a></li>
-            <li><a href="#"><span>资讯</span><span>《原神》2.3版本「皑尘与雪影」前瞻特别节目回顾长图</span></a></li>
-            <li><a href="#"><span>公告</span><span>「地脉移涌」活动：「藏金之花」「启示之花」双倍掉落！</span></a></li>
-            <li><a href="#"><span>公告</span><span>「角色活动祈愿-2」（新增类型）机制说明</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </aside>
-    <!-- aside部分结束 -->
   </div>
-  <!-- content部分结束 -->
 
-  <!-- footer部分开始 -->
-  <footer>
-    <div class="main">
-      <div class="footer-nav">
-        <div class="footer-item" id="communityMap">
-          <p class="footer-item-title"><strong>社区地图</strong></p>
-          <div>
-            <p><a href="#">酒馆</a><a href="#">攻略</a></p>
-            <p><a href="#">官方</a><a href="#">观测枢</a></p>
-            <p><a href="#">米游铺</a></p>
-            <p><a href="#">同人图</a><a href="#">COS</a></p>
-            <p><a href="#">硬核</a></p>
-          </div>
-        </div>
-        <div class="footer-item" id="knowUs">
-          <p class="footer-item-title"><strong>了解我们</strong></p>
-          <div>
-            <p><a href="#">关于我们</a></p>
-            <p><a href="#">加入我们</a></p>
-            <p><a href="#">原神官网</a></p>
-            <p><a href="#">米哈游官网</a></p>
-          </div>
-        </div>
-        <div class="footer-item" id="relatedInfo">
-          <p class="footer-item-title"><strong>相关信息</strong></p>
-          <div>
-            <p><a href="#">隐私政策</a></p>
-            <p><a href="#">米哈游社区用户服务协议</a></p>
-            <p><a href="#">米哈游通行证用户服务协议</a></p>
-          </div>
-        </div>
-        <div class="footer-item" id="contactUs">
-          <p class="footer-item-title"><strong>联系我们</strong></p>
-          <div>
-            <p><a href="#">地址：上海市徐汇区宜山路700号C4栋6层</a></p>
-            <p><a href="#">电话：400-666-6312（每天10:00~20:00）</a></p>
-          </div>
-        </div>
-        <div class="footer-item" id="QRcode">
-          <a href="javascript:;" target="_self">
-            <div>
-              <img src="picture/qrcode_ys.png" alt="">
-            </div>
-            <p>扫码下载米游社App</p>
-            <p>了解提瓦特最新资讯</p>
-          </a>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <p>© 2018 米哈游版权所有｜沪公网安备31010402001113号 | 沪ICP备19018275号-4</p>
-        <p>沪网文〔2021〕3168-216｜增值电信业务经营许可证：沪B2-20210555</p>
-        <p>互联网违法不良信息举报电话：021-60371750（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：tousu@mihoyo.com</p>
-        <p>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
-        <ul class="footer-license">
-          <li><a href="#" target="_blank"><img src="picture/license01.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="picture/license02.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="picture/license03.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="picture/license04.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="picture/license05.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="picture/license06.png" alt=""></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- footer部分结束 -->
+<script src="https://h.api.4399.com/h5mini-2.0/h5api-interface.php"></script>
+<script src="src/ll.4ed2b.js" charset="utf-8"></script>
+<script src="src/settings.acc49.js" charset="utf-8"></script>
 
-  <!-- js 引入swiper -->
-  <script src="js/swiper-bundle.min.js"></script>
-  <!-- js swiper初始化 -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: -245,
-      centeredSlides: true,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      // autoplay :true,
+<script src="main.34971.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+(function () {
+    // open web debugger console
+    if (typeof VConsole !== 'undefined') {
+        window.vConsole = new VConsole();
+    }
+
+    var debug = window._CCSettings.debug;
+    var splash = document.getElementById('splash');
+    splash.style.display = 'block';
+
+    function loadScript (moduleName, cb) {
+      function scriptLoaded () {
+          document.body.removeChild(domScript);
+          domScript.removeEventListener('load', scriptLoaded, false);
+          cb && cb();
+      };
+      var domScript = document.createElement('script');
+      domScript.async = true;
+      domScript.src = moduleName;
+      domScript.addEventListener('load', scriptLoaded, false);
+      document.body.appendChild(domScript);
+    }
+
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.b5ba8.js', function () {
+      if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+      }
+      else {
+        window.boot();
+      }
     });
-  </script>
-</body>
-</html>
+})();
+</script>
 
+
+</body></html>
