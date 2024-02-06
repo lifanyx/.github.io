@@ -12043,7 +12043,7 @@ run();</script></head>
 	window.addEventListener('focus', resize_game_canvas, false);
 	
 	PokiSDK.gameLoadingStart();
-	var progressText = document.getElementsByClassName("ttt")[0];
+	/**var progressText = document.getElementsByClassName("ttt")[0];
 	Module.gameLoaded = false;
 	Progress.addListener(function (percentage, text) {
 		if (!isNaN(percentage))
@@ -12058,7 +12058,7 @@ run();</script></head>
 			PokiSDK.gameLoadingFinished();
 			document.getElementsByClassName("progress")[0].remove();
 		}
-	});
+	});*/
 
 	window.mobileAndTabletCheck = function() {
 	  let check = false;
