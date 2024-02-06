@@ -1,0 +1,112 @@
+{
+	"menuPanel":
+	{
+		"printBtn":
+		{
+			"isVisible": true
+		},
+		"binBtn":
+		{
+			"isVisible": true
+		},
+		"downloadBtn":
+		{
+			"isVisible": true
+		}
+	},
+	"palettePanel": 
+	{
+		"pages": [
+			[
+				"#000000",
+				"#FF0000",				 
+				"#004aba", 
+				"#c0c0c0", 
+				"#00FF00", 
+				"#FFA500", 
+				"#800080", 
+				"#FFFFFF", 
+				"#FFFF00",
+				"#009bde",
+				"#8ac0ea",
+				"#ee4f3d",
+				"#984E00",
+				"#a2d40a",
+				"#f8e4b4"
+			],
+			[
+				"#FF0000",
+				"#FF0033",
+				"#FF0066",
+				"#FF0099",
+				"#FF00CC",
+				"#FF00FF",
+				"#CC00FF",
+				"#9900FF",
+				"#6600FF",
+				"#3300FF",
+				"#0000FF",
+				"#0033FF",
+				"#0066FF",
+				"#0099FF",
+				"#00CCFF"
+			],
+			[
+				"#00FFFF",
+				"#00FFCC",
+				"#00FF99",
+				"#00FF66",
+				"#00FF33",
+				"#00FF00",
+				"#33FF00",
+				"#66FF00",
+				"#99FF00",
+				"#CCFF00",
+				"#FFFF00",
+				"#FFCC00",
+				"#FF9900",
+				"#FF6600",
+				"#FF3300"
+			],
+			[
+				"texture_fill00",
+				"texture_fill01",
+				"texture_fill02",
+				"texture_fill03",
+				"texture_fill04",
+				"texture_fill05",
+				"texture_fill06",
+				"texture_fill07",
+				"texture_fill08",
+				"texture_fill09",
+				"texture_fill10",
+				"texture_fill11",
+				"texture_fill12",
+				"texture_fill13",
+				"texture_fill14"
+			],
+			[
+				"icon_tools_stamp_00",
+				"icon_tools_stamp_01",
+				"icon_tools_stamp_02",
+				"icon_tools_stamp_03",
+				"icon_tools_stamp_04",
+				"icon_tools_stamp_05",
+				"icon_tools_stamp_06",
+				"icon_tools_stamp_07",
+				"icon_tools_stamp_08",
+				"icon_tools_stamp_09",
+				"icon_tools_stamp_10"
+			]
+		],
+		"tools":
+		{
+			"brush": [ 0, 1, 2 ],
+			"pencil": [ 0, 1, 2 ],
+			"fill": [ 0, 3, 1, 2 ],
+			"spray": [ 0, 1, 2 ],
+			"stamp": [ 4 ],
+			"ink": [ 0, 1, 2 ]
+		}
+	}
+}

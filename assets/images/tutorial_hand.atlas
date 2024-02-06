@@ -1,0 +1,41 @@
+
+tutorial_hand.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 269, 80
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+cursor
+  rotate: false
+  xy: 152, 40
+  size: 115, 155
+  orig: 115, 155
+  offset: 0, 0
+  index: -1
+finger
+  rotate: false
+  xy: 386, 132
+  size: 53, 63
+  orig: 53, 63
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 2, 23
+  size: 148, 172
+  orig: 148, 172
+  offset: 0, 0
+  index: -1
+trail
+  rotate: false
+  xy: 2, 2
+  size: 152, 19
+  orig: 152, 19
+  offset: 0, 0
+  index: -1

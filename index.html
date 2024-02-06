@@ -1,90 +1,108 @@
-<html><head>
-  <meta charset="utf-8">
+<html class="wf-duality-n4-active wf-active"><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script type="text/javascript">document.domain='4399.com'</script>
+        <!-- This is to enable fullscreen when you save the page as a bookmark to the phone desktop. -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <title>Cocos Creator | secretfiles</title>
+        <!--[if lt IE 7 ]> <html class="ie6 ie"> <![endif]-->
+        <!--[if IE 7 ]>    <html class="ie7 ie"> <![endif]-->
+        <!--[if IE 8 ]>    <html class="ie8 ie"> <![endif]-->
+        <!--[if IE 9 ]>    <html class="ie9 ie"> <![endif]-->
+        <!--[if (gt IE 9)|!(IE)]><!-->  <!--<![endif]-->
+		
+		<script src="libs/screenfull.min.js"></script>
+		<script src="libs/webfont.min.js"></script>
+		
+        <script src="libs/pixi/pixi.min.js"></script>
+		<script src="libs/pixi/pixi-filters.js"></script>
+        <script src="libs/pixi/pixi-spine.js"></script>
+        <script src="libs/pixi/pixi-particles.min.js"></script>
+		<script src="libs/pixi/pixi-projection.js"></script>
+		<script src="libs/pixi/pixi-projection-spine.js"></script>
+		
+        <script src="libs/p2/p2.min.js"></script>
+        <script src="libs/signals.min.js"></script>
+        <script src="libs/greensock/TweenMax.min.js"></script>
+		<script src="libs/greensock/CustomEase.js"></script>
+        <script src="libs/howler.min.js"></script>
+        <script src="libs/bowser/bowser.min.js"></script>
+        <script src="libs/jquery-2.1.4.min.js"></script>
+        <script src="libs/md5.min.js"></script>
 
-  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
+        <script src="libs/p3.min.js"></script>
 
-  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="format-detection" content="telephone=no">
+		<script src="bin/bundle.min.js"></script>
 
-  <!-- force webkit on 360 -->
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <!-- force edge on IE -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="msapplication-tap-highlight" content="no">
+        <style>
+           body {
+                background-image: none;
+                background-color: #f0f0f0;
+            }
+            #game {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+			
+			@font-face {
+				font-family: "Duality";
+				src: 	url("./assets/fonts/webfonts/Duality.woff") format("woff"),
+						url("./assets/fonts/webfonts/Duality.eot") format("eot"),
+						url("./assets/fonts/webfonts/Duality.ttf") format("ttf");
+			}
+        </style>
+    </head>
 
-  <!-- force full screen on some browser -->
-  <meta name="full-screen" content="yes">
-  <meta name="x5-fullscreen" content="true">
-  <meta name="360-fullscreen" content="true">
-  
-  <!-- force screen orientation on some browser -->
-  <meta name="screen-orientation" content="portrait">
-  <meta name="x5-orientation" content="portrait">
+    <body marginwidth="0" marginheight="0">
+        <div id="game" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><canvas id="canvas" tabindex="1" width="1023" height="768" style="position: absolute; inset: 0px; width: 100%; height: 100%; overflow: visible; display: block; touch-action: none; cursor: inherit;"></canvas><div id="rotateImage" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin-left: auto; overflow: visible; display: none; z-index: 1000; background-image: url(&quot;./assets/images/localisation/rotate/rotate_screen_en.jpg&quot;); background-color: rgb(0, 0, 0); background-position: 50% 50%; background-repeat: no-repeat; background-size: 100%;"></div></div>
+		<!--<div id="debugPanel" style="display:none; position:absolute; top:0px; left:0px; width:100%; padding:5px; height:85px; background-color:#aaabab; color:#000000; overflow-y:scroll"></div>-->
+        <!--<div id="debugPanel" style="display:none; position:absolute; top:0px; left:0px; width:100%; padding:5px; height:85px; background-color:#aaabab; color:#000000; overflow-y:scroll"></div>-->
+		<script>
+			WebFont.load({
+			  custom: {
+				families: ["Duality"]
+			  },
+			  active: function() {
+			
+				main();
+			  }
+			});
+			
+			function main(){
+				if ($("html").hasClass("ie") || (Function("/*@cc_on return document.documentMode===10@*/")())) {
+					var nowebgl = $("<div />").attr({
+						"width": "100%",
+						"height": "100%",
+						"background-position": "50% 50%",
+						"background-repeat": "no-repeat",
+						"background-image": "url('./unsupported.jpg')",
+						"background-color": "#000000",
+						"background-size": "auto 100%"
+					}).appendTo("#game");
+				} else {
+					 var language = "en";
+					//var webfont = false;
+	
+					var main = new Main(1024, 768);
+					main.init(language);
+				}
+			}
+           
+			/*
+			window.onerror = function(msg, url, linenumber){
+                Common.debugObject(linenumber + ": " + 'ERROR: ', msg);
+                return true;
+            }
+			*/
+        </script>
+    
 
-  <!--fix fireball/issues/3568 -->
-  <!--<meta name="browsermode" content="application">-->
-  <meta name="x5-page-mode" content="app">
-
-  <!--<link rel="apple-touch-icon" href=".png" />-->
-  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
-
-  <link rel="stylesheet" type="text/css" href="style-mobile.25fc5.css">
-  <link rel="icon" href="favicon.8de18.ico">
-<script src="https://cdn.h5wan.4399sj.com/h5mini-2.0/dist/static/js/api.js"></script><style>.cocosVideo:-moz-full-screen{transform:matrix(1,0,0,1,0,0) !important;}.cocosVideo:full-screen{transform:matrix(1,0,0,1,0,0) !important;}.cocosVideo:-webkit-full-screen{transform:matrix(1,0,0,1,0,0) !important;}</style></head>
-<body>
-  <div id="Cocos2dGameContainer" style="transform: rotate(0deg); width: 631px; height: 1123px; margin: 0px; padding: 0px;"><canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99" class="gameCanvas" width="631" height="1123" style="width: 631px; height: 1123px;"></canvas></div>
-  <div id="splash" style="display: none;">
-    <div class="progress-bar stripes">
-      <span style="width: 100%;"></span>
-    </div>
-  </div>
-
-<script src="https://h.api.4399.com/h5mini-2.0/h5api-interface.php"></script>
-<script src="src/ll.4ed2b.js" charset="utf-8"></script>
-<script src="src/settings.acc49.js" charset="utf-8"></script>
-
-<script src="main.34971.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-(function () {
-    // open web debugger console
-    if (typeof VConsole !== 'undefined') {
-        window.vConsole = new VConsole();
-    }
-
-    var debug = window._CCSettings.debug;
-    var splash = document.getElementById('splash');
-    splash.style.display = 'block';
-
-    function loadScript (moduleName, cb) {
-      function scriptLoaded () {
-          document.body.removeChild(domScript);
-          domScript.removeEventListener('load', scriptLoaded, false);
-          cb && cb();
-      };
-      var domScript = document.createElement('script');
-      domScript.async = true;
-      domScript.src = moduleName;
-      domScript.addEventListener('load', scriptLoaded, false);
-      document.body.appendChild(domScript);
-    }
-
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.b5ba8.js', function () {
-      if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
-      }
-      else {
-        window.boot();
-      }
-    });
-})();
-</script>
-
-
+    
 </body></html>
