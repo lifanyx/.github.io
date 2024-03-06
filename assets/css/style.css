@@ -403,7 +403,7 @@ body {
 
 .about-banner {
   #border-radius: var(--radius-16);
-  max-width: max-content;
+  #max-width: max-content;
 }
 
 .about-banner-1 {
@@ -890,8 +890,8 @@ body {
   }
 
   .about-banner-1 {
-    border-bottom-right-radius: var(--radius-16);
-    border-top-left-radius: 120px;
+    #border-bottom-right-radius: var(--radius-16);
+    #border-top-left-radius: 120px;
   }
 
   .about-banner-3 {
