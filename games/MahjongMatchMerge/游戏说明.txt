@@ -1,0 +1,30 @@
+1.游戏名
+a. Mahjong Match Merge  b.解压消消消 c.解壓消消消
+
+2.副标题
+a. combine number with same color
+
+b. 有趣的消除合成小游戏
+
+c. 有趣的消除合成小遊戲
+
+3.游戏简介
+
+a. A fun game that combines storage boxes. In the game, you need to use your strategy to combine larger numbers of the same color filled boxes. The game is casual and relaxing, but challenging. How many numbers can you combine?
+
+b.一款有趣的合成收纳盒子的游戏，游戏中需要您发挥策略，将放满盒子中的相同颜色合成更大的数字，游戏休闲解压但富有挑战性，你能合成到多少数字呢？
+
+c.一款有趣的合成收納盒子的遊戲，遊戲中需要您發揮策略，將放滿盒子中的相同顏色合成更大的數位，遊戲休閒解壓但富有挑戰性，你能合成到多少數位呢？
+
+4.游戏关键字
+
+a.click kids grow mini connect xiaoxiaole challenge play games pass arcade target fun collection box
+
+b.游戏升级时间消消乐休闲世界麻将合成连连看主题早教单机元素娱乐益智解压街机技术竞技全民制作对对碰策略经典测试思维比赛儿童消除系统找找看硬币数学方格盒子开心提升任务收集排名火爆金币关卡热门连接放松排序
+
+c.遊戲陞級時間消消樂休閒世界麻將合成連連看主題早教單機元素娛樂益智解壓街機科技競技全民製作對對碰策略經典測試思維比賽兒童消除系統找找看硬幣數學方格盒子開心提升任務收集排名火爆金幣關卡熱門連接放鬆排序
+
+
+	app_id :  ca-app-pub-9887284025400822~5081780529
+
+  	插屏：ca-app-pub-9887284025400822/8615300032
