@@ -5,28 +5,28 @@
             "appId": "id6483942042",
             "showAd": true,
             "showCross": true,
-            "iconurl": "savebearx.png",
+            "iconurl": "CityBuilder.png",
             "url": "urban-developers/id6483942042"
         },
         {
             "appId": "id6478841809",
             "showAd": true,
             "showCross": true,
-            "iconurl": "tennismtour.png",
+            "iconurl": "SmartGreedySnake.png",
             "url": "smart-greedy-snake/id6478841809"
         },
         {
             "appId": "id6478065786",
             "showAd": true,
             "showCross": true,
-            "iconurl": "stickescape.png",
+            "iconurl": "JoyMahjong.png",
             "url": "interesting-mahjong/id6478065786"
         },
         {
             "appId": "3468170749",
             "showAd": false,
             "showCross": false,
-            "iconurl": "stickescape.png",
+            "iconurl": "MahjongMatchMerge.png",
             "url": "mahjong-match-merge/id6478065786"
         }
     ],
