@@ -24,7 +24,7 @@
         },
         {
             "appId": "3468170749",
-            "showAd": false,
+            "showAd": true,
             "showCross": false,
             "iconurl": "MahjongMatchMerge.png",
             "url": "mahjong-match-merge/id6478065786"
