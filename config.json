@@ -28,6 +28,13 @@
             "showCross": false,
             "iconurl": "MahjongMatchMerge.png",
             "url": "mahjong-match-merge/id6478065786"
+        },
+        {
+            "appId": "5081780529",
+            "showAd": true,
+            "showCross": false,
+            "iconurl": "DrawParkingPro.png",
+            "url": ""
         }
     ],
     "showCross": false
