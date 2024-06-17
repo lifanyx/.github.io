@@ -34,7 +34,14 @@
             "showAd": true,
             "showCross": false,
             "iconurl": "DrawParkingPro.png",
-            "url": ""
+            "url": "draw-parking-pro/id6503272119"
+        },
+        {
+            "appId": "6324143229",
+            "showAd": true,
+            "showCross": false,
+            "iconurl": "StickmanDrawMaster.png",
+            "url": "stickman-draw-master/id6503277579"
         }
     ],
     "showCross": false
